@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="name">enter disk's name</label><br/>
+    <input type="text" name="name" id="name"><br/>
+    <input type="button" value="sort" onclick="sortByDiskName()"><br/><br/>
+    <label for="sel">choose country</label>
+    <select id="sel" onchange="showByCountry(event)"></select>
+    <p>sort from year</p>
+    <input type="number" id="from">
+    <p>to year</p>
+    <input type="number" id="to">
+    <input type="button" value="sort" onclick="sortByYear()"><br/><br/>
+    
+    <div id="show"></div>
+
+    <label for="title">title</label><br/>
+    <input type="text" name="title" id="title"><br/>
+    <label for="artist">artist</label><br/>
+    <input type="text" name="artist" id="artist"><br/>
+    <label for="country">country</label><br/>
+    <input type="text" name="country" id="country"><br/>
+    <label for="company">company</label><br/>
+    <input type="text" name="company" id="company"><br/>
+    <label for="price">price</label><br/>
+    <input type="text" name="price" id="price"><br/>
+    <label for="year">year</label><br/>
+    <input type="text" name="year" id="year"><br/><br/>
+    <input type="button" value="add" onclick="addNewDisk()"><br/><br/>
+
+    <label for="remove">remove by index</label><br/>
+    <input type="text" name="remove" id="remove"><br/>
+    <input type="button" value="remove" onclick="removeDisk()">
+
+
+
+
+    <script src="cd_array.js"></script>
+    <script src="lesson5.js"></script>
+</body>
+</html>
